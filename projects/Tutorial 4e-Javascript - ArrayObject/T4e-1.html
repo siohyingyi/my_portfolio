@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Arrays</title>
+  </head>
+
+ <body>
+
+
+  <table border="1" cellspacing="0">
+    <tr align="center">
+       <th>Product's Name</th> <th>Unit Price <br>(RM)</th> <th> Quatity</th> <th> Price <br> (RM)</th>
+     </tr>
+
+    <script language="Javascript">
+
+       // Declaring array products and prices
+       var products = new Array("Speaker", "Head phone", "Keyboard","Mouse");  // basic format for creating array
+       var prices= [7,15,12,30,10];  // another format for creating an array
+    
+       //Q2a: declare an array named quantity which contains the number of each product
+       var quantity = [10,30,25,8];
+       
+
+       var qty_count=0;
+       var total_unitprice=0;
+       var total_price=0;
+
+       for (var i=0; i<products.length; i++)
+       {
+         
+         total_unitprice += prices[i];
+         
+         /*Q2b: using the above example of total_unitprice, define formula for
+            -price
+            -qty_count
+            -total_price
+            */
+          var price = quantity[i] * prices[i];
+          qty_count +=quantity[i];
+          total_price +=price
+
+         document.writeln("<tr align='right'>");
+
+         //Print out the array products and prices
+         document.writeln("<td align='left'>", products[i],"</td>",
+                          "<td>", prices[i],"</td>" );
+
+         //Q2a: print out array quantity
+         document.writeln("<td>", quantity[i], "</td>"); 
+
+         //Q2b: print out price for each product
+         document.writeln("<td>", price, "</td>"); 
+         document.writeln("</tr>");
+       }
+    </script>
+
+       <tr align="right">
+          <th colspan="2" align="right">Total </th>
+
+          <!-- Q2c: print out the total quantity using document.writeln -->
+          <!-- see example fpr average price below -->
+          <td><script>document.writeln(qty_count); </script></td> 
+
+          <!-- Q2d: print out the total price using document.writeln -->
+          <!-- see example fpr average price below -->
+          <td><script>document.writeln(total_price); </script></td>
+       </tr>
+
+  </table>
+
+  <br>
+  The average of Unit Price: <b><font color="red">
+
+    <!-- Example: Print out the average price using document.writeln -->
+  <script> document.writeln(total_unitprice/prices.length);</script>
+  </font></b>
+  </body>
+</html>

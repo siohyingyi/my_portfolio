@@ -1,0 +1,163 @@
+<!--
+********************************************************
+* Group Quiz 01: HTML 					       
+* 						       
+* Date: 5/4/2025                                                
+* Members Name & Matric No: Yap Kar Ying A23CS0200
+                            Sioh Ying Yi A23CS0180
+							Tan Keqin A23CS0184 
+							Wong Shi Yun A23CS0198   				       
+* Section : 05                                           
+********************************************************
+-->
+
+
+<html>
+<head>
+<title>Popcorn Sales Form</title>
+<style>
+	body{
+		background-color: #99CCFF;
+	}
+	
+	table{
+		width: 35%;
+	}
+
+	th{
+		text-align: center;
+		background-color: #FFFF00;
+	}
+
+	td{
+		background-color: #FF6666;
+		
+	}
+
+	
+
+	
+</style>
+</head>
+
+<body>
+<h2 style="color: blue;"> Welcome to Millenium Gymnastic Booster Club Popcorn Sales </h2>
+<!-- The next line gives the address of the CGI program -->
+
+<form action="/action_page.php">
+
+
+<!-- Insert A borderless table of text widgets for name, address, city and gender -->
+<table border="2" width="35%">
+    <tr>
+		<th colspan="3">
+			<h3 style="color: blue; margin: 0; padding: 10px;">Contact Infromations</h3>
+		</th>	 
+	</tr>
+    <tr>
+		<td><i>Address for:</i></td>
+		<td align="center" colspan="2">
+			<input type="radio" name="address_for" value="home" id="Home">
+			<label for="Home">Home</label>
+			<input type="radio" name="address_for" value="office" id="Office">
+			<label for="Office">Office</label>
+		</td>
+	</tr>
+	<tr>
+		<td><i>Buyer's Name:</i></td>
+		<td><input type="text" name="buyer_name" id="buyer_name"></td>
+		<td rowspan="4" align="center"><img src="popcorn.png" alt="Popcorn Image" width="80" height="100"> </td>
+	</tr>
+	<tr>
+		<td><i>Street Address:</i></td>
+		<td><input type="text" name="street_address" id="street_address"></td>
+	</tr>
+
+	<tr>
+		<td><i>City, State, Zip:</i></td>
+		<td><input type="text" name="city_state_zips" id="city_state_zips"></td>
+	</tr>
+	
+	<tr>
+		<td><i>Gender:</i></td>
+		<td>
+			<select name="gender" id="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select>
+		</td>
+	</tr>
+</table>
+<br><br>
+
+
+<!-- Insert A bordered table for items orders -->
+<table border="2"; width="35%">
+
+<!-- First, insert the column headings -->
+	<tr>
+		<th>Product Name</th>
+		<th>Price</th>
+		<th style="width: 150px;">Quantity</th>
+	</tr>
+	
+
+<!-- Now, insert the three of table data entries -->
+	
+	<tr align="center">
+		<td>Unpopped Popcorn</td>
+        <td>$3:00</td>
+		<td><input type="text" name="quantity1" id="quantity1" style="width: 60px;"></td>
+	</tr>
+	<tr align="center">
+	    <td >Caramel Popcorn</td>
+        <td>$4:00</td>
+        <td><input type="text" name="quantity2" id="quantity2" style="width: 60px;"></td>
+	</tr>
+	<tr align="center">
+		<td>Caramel Nut Popcorn</td>
+        <td>$5:00</td>
+        <td><input type="text" name="quantity3" id="quantity3" style="width: 60px;"></td>
+	</tr>
+	
+	<tr align="center">
+		<td>Toffee Nut Popcorn</td>
+        <td>$6:00</td>
+        <td><input type="text" name="quantity4" id="quantity4"style="width: 60px;"></td>
+	</tr>
+
+
+	
+
+</table>
+
+
+<!-- Now, insert the radio button for the payment method -->
+<h2> Payment Method: </h2>
+<p>
+	<input type="radio" name="payment" value="cash" id="cash" checked>
+	<label for="cash">Cash</label>
+    <input type="radio" name="payment" value="credit_card" id="credit_card">
+	<label for="credit_card">Credit Card</label>
+    <input type="radio" name="payment" value="visa_card" id="visa_card">
+	<label for="visa_card">Visa Card</label>
+    <input type="radio" name="payment" value="check" id="check"> 
+	<label for="check">Check</label>
+</p>
+
+<br>
+<br>
+<!-- Lastly, insert the submit and reset buttons -->
+<h3>Please write your comments</h3>
+<p>
+	:<textarea name="comments" rows="7" cols="50"></textarea>
+</p>
+
+<p>
+	<input type="submit" value="Submit Order"> 
+    <input type="reset" value="Clear Order Form"> 
+</p>
+
+</form> 
+</body>
+</html>

@@ -1,0 +1,160 @@
+/*
+Author: Sioh Ying Yi
+Matric No: A23CS0180
+Section: 05
+*/
+
+
+/* These styles are for appearance purposes for parents grid container */
+#calculator {
+    width: 50vw;  /* 50 viewport width size relative to viewport*/
+    height: 60vh;
+    margin: auto;
+    border: solid;
+    margin: 0 auto;
+    padding: 2px;
+    box-sizing: border-box;
+
+    /* These styles to deifned grid layout purposes */
+    /*Q1-define grid layout */
+    display: grid;
+    /*Q2a-set grid with 4 column, and size 1 fraction each */
+    grid-template-columns: repeat(4,1fr);
+    /*Q2b-set grid with 6 row, row1 is 2fr, row 2 1fr, row 3-6 1.5fr  */
+    grid-template-rows: 2fr,1fr,repeat(4, 1.5fr);
+    /*Q2c-set grid gap to 0.2em */
+    grid-gap: 0.2em;
+}
+
+
+/* Q3a-Setting placing items into grid for input textbox */
+#display {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    background-color: black;
+    font-size: 2.5em;
+    color: white;
+    text-align: right;
+    padding-right: 1em;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+
+/* Q4-setting placing items into grid for button aritmetric operations + - x / */
+#plus {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#minus {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#times {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#div {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+
+/* Q5-setting placing items into grid for button numbering 0 - 9 */
+#btn-7 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+#btn-8 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+#btn-9 {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#btn-4 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+#btn-5 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+#btn-6 {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+#btn-1 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+#btn-2 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+#btn-3 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+
+#btn-0 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+#btn-dot {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+
+#btn-AC {
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+}
+
+#equal {
+    grid-column: 4 / 5;
+    grid-row: 3 / 7;
+    background-color: orange;
+}
+
+
+/* ===========================   YOUR TURN    ================================ */
+/* Q6 until Q8 */
+button{
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    border: 2px solid red;
+}
+
+button:hover{
+    background-color: tomato;
+    font-size: 36px;
+    color: white;
+}
+
+#equal:hover{
+    background-color: tomato;
+}
+
+button:active{
+    background-color: yellow;
+    font-size: 60px;
+    color: black;
+}
+
+#equal:active{
+    background-color: yellow;
+}

@@ -1,0 +1,99 @@
+<!--Portfolio-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore projects and exercises by Sioh Ying Yi, including HTML, CSS, JavaScript, and responsive web design." />
+
+        <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js" defer></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+    <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Sioh Ying Yi</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link" >Home</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="portfolio.html" class="nav__link active">Portfolio</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">☰</div>
+
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="portfolio section">
+      <div class="container">
+        <h2 class="section__title">My Projects</h2>
+        <div class="portfolio__grid">
+
+          <div class="project">
+            <div class="project__img-box">
+            <img src="image/Front-End-Develop2.jpg" alt="Project 1" class="project__img" width="258" height="172">
+              <div class="project__overlay">
+                <a href="projects/Lab2-Material/Lab2.html" class="project__btn" target="_blank">View Project</a>
+              </div>
+             </div>
+           <h3 class="project__title">Popcorn Sales Form</h3>
+           <p class="project__desc">A project that uses basic HTML to design an online order form for popcorn sales. It includes form controls (text fields, radio buttons, dropdowns) and structured tables for product selection and customer information. It is useful for learning semantic HTML and form processing structure.</p>
+        </div>
+
+        <div class="project">
+            <div class="project__img-box">
+            <img src="image/project2.png" alt="Project 2" class="project__img" width="258" height="129">
+              <div class="project__overlay">
+                <a href="projects/CSS 2-CSS Layout-Material/ex2-CSS Material.html" class="project__btn" target="_blank">View Project</a>
+              </div>
+             </div>
+           <h3 class="project__title">Basic Website Layout Using CSS</h3>
+           <p class="project__desc">An exercise to practice CSS box model and layout structuring using div tag. This page simulates a full website layout with banner, navigation, content area, sidebar and footer. It helped reinforce understanding of id selectors and the positioning of elements using plain CSS.</p>
+        </div>
+         
+        <div class="project">
+            <div class="project__img-box">
+            <img src="image/project3.jpg" alt="Project 3" class="project__img"  width="258" height="258">
+              <div class="project__overlay">
+                <a href="projects/Lab2 Grid Calculator/calculator-s.html" class="project__btn" target="_blank">View Project</a>
+              </div>
+             </div>
+           <h3 class="project__title">Grid-Based Calculator UI</h3>
+           <p class="project__desc">An attempt to design a basic calculator layout using CSS Grid. The focus was on using grid-template-areas and grid rows/columns to align buttons and display sections, emphasizing responsive design, eventhough functionality wasn't implemented yet.</p>
+        </div>
+
+        <div class="project">
+            <div class="project__img-box">
+            <img src="image/project4.jpg" alt="Project 4" class="project__img" width="258" height="190">
+              <div class="project__overlay">
+                <a href="projects/Tutorial 4e-Javascript - ArrayObject/T4e-1.html" class="project__btn" target="_blank">View Project</a>
+              </div>
+             </div>
+           <h3 class="project__title">Product Pricing Table with JavaScript Arrays</h3>
+           <p class="project__desc">This task demonstrates JavaScript array usage to dynamically populate a table of products, prices, quantities and totals. It uses document.writeln() to insert rows, calculates total prices and displays the average price. This makes it a great exercise for loops and array operations.</p>
+        </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <footer class="footer">
+    <h2 class="contact__subtitle">Contact Me</h2>
+    <div class="footer__socials">
+           <a href="https://github.com/siohyingyi" target="_blank" aria-label="GitHub Profile"><i class='bx bxl-github'></i></a>
+           <a href="https://www.linkedin.com/in/sioh-ying-yi-a5b247342/" target="_blank" aria-label="LinkedIn Profile"><i class='bx bxl-linkedin'></i></a>
+           <a href="https://www.facebook.com/share/193ADVp73R/" target="_blank" aria-label="Facebook Profile"><i class='bx bxl-facebook'></i></a>
+           <a href="https://www.instagram.com/siohyingyi/profilecard/?igsh=MWFnbjFlOWEwbWo2Zg==" target="_blank" aria-label="Instagram Profile"><i class='bx bxl-instagram'></i></a>
+        </div>
+      <p class="footer__text">&copy; 2025 Sioh Ying Yi | All rights reserved.</p>
+  </footer>
+    </body>
+</html>
